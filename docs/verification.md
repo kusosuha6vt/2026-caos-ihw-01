@@ -1,5 +1,44 @@
 # Verification and AI critical assessment
 
+## Docker build correction and Linux verification — 2026-10-08
+
+Added libc6-dev explicitly to the Dockerfile dependency list. With recommended
+packages disabled, gcc alone omitted the C headers and startup objects, causing
+the compiler-link check failure recorded below. Compose needed no change.
+
+Executed with Docker Engine 29.8.2 and Compose v5.5.1, Debian bookworm on
+Linux/ARM64, GCC 12.2.0 and CMake 3.25.1:
+
+- Built runtime, test and experiment images successfully through Compose.
+- Runtime suite: all 47 groups passed, including FIFO, invariants, output errors,
+  deterministic replay and SIGINT/SIGTERM in finite/unlimited modes.
+- CMake sanitize target in the test container: all 47 groups passed under
+  AddressSanitizer/UndefinedBehaviorSanitizer.
+- Runtime service completed a 100-visitor run using the packaged demo config.
+  Validated its persisted JSONL and single CSV row on the host.
+- Experiment service completed 192 runs. Aggregate JSON matches the saved
+  experiment data exactly after excluding the output-directory path.
+
+Verification outputs are isolated in output/runs/docker-check.Fxe03h; previous
+experiment data and report files were preserved. This establishes Linux/ARM64
+execution; Linux/AMD64 was not tested. Earlier unavailable-daemon/build-failure
+entries below describe their original checks, not the current working setup.
+
+## Docker configuration check — 2026-10-08
+
+Docker Desktop is now reachable: Engine 29.8.2, Linux/ARM64; Compose v5.5.1.
+Both default and test/experiments-profile Compose configurations validate.
+Attempted `docker compose --profile test --profile experiments build`.
+The Debian dependency layer completed after transient download retries, but
+all service builds share a failing CMake compiler check: the linker cannot find
+Scrt1.o and crti.o. The Dockerfile installs gcc with --no-install-recommends
+without explicitly installing libc6-dev, so the C development files are absent.
+
+Required correction: add libc6-dev to the apt-get install list in Dockerfile.
+This check records the finding; the Dockerfile was not changed. No simulation,
+runtime test suite, sanitizer suite or experiments ran on Linux because the
+image build failed before compilation. Earlier macOS evidence remains valid.
+
 ## Compact report — 2026-10-07
 
 Formatting follow-up: converted the module descriptions and recorded fixes into

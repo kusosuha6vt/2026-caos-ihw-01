@@ -1,5 +1,5 @@
 FROM debian:bookworm-slim AS tools
-RUN apt-get update && apt-get install -y --no-install-recommends gcc cmake ninja-build python3 \
+RUN apt-get update && apt-get install -y --no-install-recommends gcc libc6-dev cmake ninja-build python3 \
     && rm -rf /var/lib/apt/lists/*
 WORKDIR /app
 COPY CMakeLists.txt ./
