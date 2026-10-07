@@ -1,5 +1,18 @@
 # Verification and AI critical assessment
 
+## Published API reference — 2026-10-08
+
+Moved Doxygen output from the build directory to docs/generated. The repository
+includes docs/generated/html and all of its styles, scripts and images; generated
+XML remains local and ignored. CMake docs/doxygen targets regenerate the same
+published location, and README/developer instructions point to the new paths.
+
+Configured and generated with Doxygen 1.18.0 successfully, without warnings or
+retries. Checked local HTML links and asset references for missing files: none.
+XML confirms descriptions for 44 distinct functions and five structs; public
+functions also have header entries. HTML contains 146 files, approximately 1.4 MB.
+No simulation code changed, and runtime tests were not repeated for this change.
+
 ## Docker build correction and Linux verification — 2026-10-08
 
 Added libc6-dev explicitly to the Dockerfile dependency list. With recommended

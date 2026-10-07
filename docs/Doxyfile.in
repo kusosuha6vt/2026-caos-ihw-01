@@ -1,6 +1,6 @@
 PROJECT_NAME           = "Gallery simulation"
 PROJECT_BRIEF          = "Single-threaded deterministic C17 event simulation"
-OUTPUT_DIRECTORY       = "@PROJECT_BINARY_DIR@/docs"
+OUTPUT_DIRECTORY       = "@PROJECT_SOURCE_DIR@/docs/generated"
 INPUT                  = "@PROJECT_SOURCE_DIR@/include" \
                          "@PROJECT_SOURCE_DIR@/src" \
                          "@PROJECT_SOURCE_DIR@/docs/api.md"

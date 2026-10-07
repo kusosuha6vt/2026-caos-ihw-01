@@ -47,7 +47,7 @@ cmake --build build --target docs
 ```
 
 Install Doxygen before configuring to enable the `docs` target. Graphviz and LaTeX
-are not needed. Open `build/docs/html/index.html` for the generated API reference;
+are not needed. Open `docs/generated/html/index.html` for the generated API reference;
 compiler commands are exported separately as `build/compile_commands.json`.
 Header comments describe preconditions, outputs and failure conventions. Keep
 them in the owning module header when changing an interface. Every implementation
@@ -55,7 +55,9 @@ function also has a Doxygen comment; private helpers document parameters, effect
 and return values, while exported implementations add algorithm notes to their
 header contracts. All project-defined structs are documented in their headers.
 Static functions are included in the reference, and XML is generated alongside
-HTML under `build/docs/xml` for coverage inspection.
+HTML under `docs/generated/xml` for local coverage inspection. The HTML and its
+assets are committed for offline viewing; XML is excluded from Git. Regenerate
+the published files with the docs target after changing API comments.
 
 On macOS ARM64, the installed Doxygen 1.18.0 may hit an intermittent comment
 scanner crash reported in [upstream issue 12326](https://github.com/doxygen/doxygen/issues/12326).

@@ -22,3 +22,6 @@
 
 # The submission PDF is output/pdf/report.pdf; this is an editor-generated copy.
 /report/main.pdf
+
+# Publish the browsable HTML; XML is only used for local coverage inspection.
+/docs/generated/xml/

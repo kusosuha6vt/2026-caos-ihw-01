@@ -176,13 +176,16 @@ cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build --target docs
 ```
 
-Откройте `build/docs/html/index.html`. Target `doxygen` — синоним `docs`.
+Откройте [docs/generated/html/index.html](docs/generated/html/index.html).
+Готовая HTML-документация включена в репозиторий; для её просмотра Doxygen
+не нужен. Target `doxygen` — синоним `docs` и обновляет эти файлы.
 Генерация HTML запускается явно и требует только Doxygen; Graphviz и LaTeX
 не используются. Обычная сборка и запуск не зависят от генератора документации.
 Конфигурация: `docs/Doxyfile.in`; обзор для разработчика: `docs/api.md`.
 Комментарии в `include/` описывают структуры, контракты функций, владение ресурсами
 и ошибки. Комментарии есть у каждой функции в `src/`, включая static-помощники;
-они также включены в документацию. XML для проверки покрытия — `build/docs/xml`.
+они также включены в документацию. XML для локальной проверки покрытия —
+`docs/generated/xml` (не включается в Git).
 Ошибки документирования приводят к неуспеху target. Без установленного Doxygen
 CMake продолжает работать и сообщает, что targets документации недоступны.
 Для Doxygen 1.18.0 на macOS ARM64 target использует обход

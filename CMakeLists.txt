@@ -120,7 +120,7 @@ if(Doxygen_FOUND)
             "-DMAX_ATTEMPTS=${GALLERY_DOXYGEN_ATTEMPTS}"
             -P "${PROJECT_SOURCE_DIR}/cmake/RunDoxygen.cmake"
         WORKING_DIRECTORY "${PROJECT_SOURCE_DIR}"
-        COMMENT "Generating API documentation in ${PROJECT_BINARY_DIR}/docs/html"
+        COMMENT "Generating API documentation in ${PROJECT_SOURCE_DIR}/docs/generated/html"
         USES_TERMINAL VERBATIM)
     add_custom_target(doxygen DEPENDS docs)
 else()
