@@ -1,0 +1,16 @@
+# C/POSIX correctness checks. Avoid C++ modernization and naming churn.
+Checks: >-
+  -*,
+  clang-analyzer-*,
+  -clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling,
+  bugprone-*,
+  -bugprone-easily-swappable-parameters,
+  -bugprone-signed-bitwise,
+  performance-*,
+  portability-*
+# Analyzer/compiler findings fail the target; heuristic suggestions are advisory.
+# Annex K's optional *_s APIs are not portable libc/POSIX interfaces.
+# Signed shift counts are valid for this project's unsigned bit operations.
+WarningsAsErrors: 'clang-analyzer-*,clang-diagnostic-*'
+HeaderFilterRegex: '(^|/)include/.*\.h$'
+FormatStyle: file

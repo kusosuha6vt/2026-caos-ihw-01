@@ -1,0 +1,11 @@
+.git
+.codex
+.agents
+build
+output
+report
+docs
+*.pdf
+*.jsonl
+*.csv
+**/__pycache__

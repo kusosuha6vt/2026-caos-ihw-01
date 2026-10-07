@@ -1,0 +1,131 @@
+{
+  "seeds": 24,
+  "total_runs": 192,
+  "visitors": 200,
+  "paintings": 7,
+  "scenarios": {
+    "low-load": {
+      "capacity": 20,
+      "painting-capacity": 3,
+      "arrival-min": 15,
+      "arrival-max": 25,
+      "view-min": 10,
+      "view-max": 30
+    },
+    "crowded": {
+      "capacity": 20,
+      "painting-capacity": 2,
+      "arrival-min": 0,
+      "arrival-max": 2,
+      "view-min": 15,
+      "view-max": 35
+    }
+  },
+  "batch": "/Users/dan/Documents/hse/term3/caos/01-ihw/output/experiments/batch-l3pbjez4",
+  "table": [
+    {
+      "scenario": "low-load",
+      "strategy": "ordered",
+      "runs": 24,
+      "mean_time_ms": 4139.833333333333,
+      "min_time_ms": 4064,
+      "max_time_ms": 4219,
+      "sd_time_ms": 42.589717749370145,
+      "mean_entrance_wait_ms": 0.0,
+      "mean_painting_wait_ms": 0.008958333333333334,
+      "mean_paired_delta_ms": 0,
+      "mean_gallery_utilization": 0.33792318408333333
+    },
+    {
+      "scenario": "low-load",
+      "strategy": "random",
+      "runs": 24,
+      "mean_time_ms": 4141.083333333333,
+      "min_time_ms": 4064,
+      "max_time_ms": 4219,
+      "sd_time_ms": 43.48604640438192,
+      "mean_entrance_wait_ms": 0.0,
+      "mean_painting_wait_ms": 0.253869125,
+      "mean_paired_delta_ms": 1.25,
+      "mean_gallery_utilization": 0.34196364991666667
+    },
+    {
+      "scenario": "low-load",
+      "strategy": "least-crowded",
+      "runs": 24,
+      "mean_time_ms": 4139.833333333333,
+      "min_time_ms": 4064,
+      "max_time_ms": 4219,
+      "sd_time_ms": 42.589717749370145,
+      "mean_entrance_wait_ms": 0.0,
+      "mean_painting_wait_ms": 0.001577375,
+      "mean_paired_delta_ms": 0,
+      "mean_gallery_utilization": 0.3377980964166667
+    },
+    {
+      "scenario": "low-load",
+      "strategy": "cyclic",
+      "runs": 24,
+      "mean_time_ms": 4140.666666666667,
+      "min_time_ms": 4064,
+      "max_time_ms": 4223,
+      "sd_time_ms": 43.35762975499254,
+      "mean_entrance_wait_ms": 0.0,
+      "mean_painting_wait_ms": 0.25875004166666665,
+      "mean_paired_delta_ms": 0.8333333333333334,
+      "mean_gallery_utilization": 0.3420805290833333
+    },
+    {
+      "scenario": "crowded",
+      "strategy": "ordered",
+      "runs": 24,
+      "mean_time_ms": 2828.2916666666665,
+      "min_time_ms": 2773,
+      "max_time_ms": 2897,
+      "sd_time_ms": 30.439504033362656,
+      "mean_entrance_wait_ms": 1153.5739583333334,
+      "mean_painting_wait_ms": 13.534613083333333,
+      "mean_paired_delta_ms": 0,
+      "mean_gallery_utilization": 0.9531071922916666
+    },
+    {
+      "scenario": "crowded",
+      "strategy": "random",
+      "runs": 24,
+      "mean_time_ms": 3053.5416666666665,
+      "min_time_ms": 2956,
+      "max_time_ms": 3191,
+      "sd_time_ms": 52.01085101388369,
+      "mean_entrance_wait_ms": 1235.283125,
+      "mean_painting_wait_ms": 16.891726166666665,
+      "mean_paired_delta_ms": 225.25,
+      "mean_gallery_utilization": 0.9597988452083334
+    },
+    {
+      "scenario": "crowded",
+      "strategy": "least-crowded",
+      "runs": 24,
+      "mean_time_ms": 2612.2916666666665,
+      "min_time_ms": 2578,
+      "max_time_ms": 2659,
+      "sd_time_ms": 18.896696667077457,
+      "mean_entrance_wait_ms": 1046.835,
+      "mean_painting_wait_ms": 10.873273791666668,
+      "mean_paired_delta_ms": -216,
+      "mean_gallery_utilization": 0.960618724125
+    },
+    {
+      "scenario": "crowded",
+      "strategy": "cyclic",
+      "runs": 24,
+      "mean_time_ms": 3054.5416666666665,
+      "min_time_ms": 2976,
+      "max_time_ms": 3196,
+      "sd_time_ms": 49.24647784065521,
+      "mean_entrance_wait_ms": 1232.538125,
+      "mean_painting_wait_ms": 16.902232083333335,
+      "mean_paired_delta_ms": 226.25,
+      "mean_gallery_utilization": 0.959698639375
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+services:
+  gallery:
+    build:
+      context: .
+      target: runtime
+    volumes:
+      - ./output/runs:/output
+    stdin_open: true
+    tty: true
+    stop_grace_period: 5s
+  tests:
+    profiles: [test]
+    build:
+      context: .
+      target: test
+  experiments:
+    profiles: [experiments]
+    build:
+      context: .
+      target: experiments
+    volumes:
+      - ./output:/output
