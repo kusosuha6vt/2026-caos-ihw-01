@@ -1,5 +1,12 @@
 # Verification and AI critical assessment
 
+## README reference update — 2026-10-08
+
+Replaced long paragraphs with feature lists, CLI/default/bounds tables, command
+tables and links. Checked every local link, coverage of all CLI options against
+gallery --help, and shell syntax in the examples. No runtime code changed;
+existing Linux/macOS verification is linked rather than rerun.
+
 ## Published API reference — 2026-10-08
 
 Moved Doxygen output from the build directory to docs/generated. The repository
