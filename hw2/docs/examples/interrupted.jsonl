@@ -1,0 +1,53 @@
+{"type":"config","backend":"semaphore","capacity":2,"paintings":3,"painting_capacity":3,"visitors":100,"arrival_min_ms":0,"arrival_max_ms":0,"view_min_ms":10,"view_max_ms":10,"display_delay_ms":0,"strategy":"random","seed":42}
+{"type":"event","seq":1,"time_ms":0.150,"event":"arrive","text":"Посетитель прибыл","visitor":1,"painting":0,"gallery":0,"viewers":0,"queue":0,"delay_ms":0}
+{"type":"event","seq":2,"time_ms":0.198,"event":"queue","text":"Посетитель ожидает разрешения вахтёра","visitor":1,"painting":0,"gallery":0,"viewers":0,"queue":1,"delay_ms":0}
+{"type":"event","seq":3,"time_ms":0.244,"event":"arrive","text":"Посетитель прибыл","visitor":2,"painting":0,"gallery":0,"viewers":0,"queue":1,"delay_ms":0}
+{"type":"event","seq":4,"time_ms":0.258,"event":"queue","text":"Посетитель ожидает разрешения вахтёра","visitor":2,"painting":0,"gallery":0,"viewers":0,"queue":2,"delay_ms":0}
+{"type":"event","seq":5,"time_ms":0.304,"event":"arrive","text":"Посетитель прибыл","visitor":3,"painting":0,"gallery":0,"viewers":0,"queue":2,"delay_ms":0}
+{"type":"event","seq":6,"time_ms":0.346,"event":"queue","text":"Посетитель ожидает разрешения вахтёра","visitor":3,"painting":0,"gallery":0,"viewers":0,"queue":3,"delay_ms":0}
+{"type":"event","seq":7,"time_ms":0.386,"event":"grant","text":"Вахтёр разрешил вход","visitor":1,"painting":0,"gallery":1,"viewers":0,"queue":2,"delay_ms":0}
+{"type":"event","seq":8,"time_ms":0.406,"event":"grant","text":"Вахтёр разрешил вход","visitor":2,"painting":0,"gallery":2,"viewers":0,"queue":1,"delay_ms":0}
+{"type":"event","seq":9,"time_ms":0.428,"event":"enter","text":"Посетитель вошёл в галерею","visitor":2,"painting":0,"gallery":2,"viewers":0,"queue":1,"delay_ms":0}
+{"type":"event","seq":10,"time_ms":0.438,"event":"choose","text":"Посетитель выбрал картину","visitor":2,"painting":2,"gallery":2,"viewers":0,"queue":1,"delay_ms":0}
+{"type":"event","seq":11,"time_ms":0.440,"event":"view_begin","text":"Начало осмотра","visitor":2,"painting":2,"gallery":2,"viewers":1,"queue":1,"delay_ms":10}
+{"type":"event","seq":12,"time_ms":0.450,"event":"arrive","text":"Посетитель прибыл","visitor":4,"painting":0,"gallery":2,"viewers":0,"queue":1,"delay_ms":0}
+{"type":"event","seq":13,"time_ms":0.459,"event":"queue","text":"Посетитель ожидает разрешения вахтёра","visitor":4,"painting":0,"gallery":2,"viewers":0,"queue":2,"delay_ms":0}
+{"type":"event","seq":14,"time_ms":0.460,"event":"wait_entrance","text":"Галерея заполнена, ожидание у входа","visitor":4,"painting":0,"gallery":2,"viewers":0,"queue":2,"delay_ms":0}
+{"type":"event","seq":15,"time_ms":0.468,"event":"enter","text":"Посетитель вошёл в галерею","visitor":1,"painting":0,"gallery":2,"viewers":0,"queue":2,"delay_ms":0}
+{"type":"event","seq":16,"time_ms":0.471,"event":"choose","text":"Посетитель выбрал картину","visitor":1,"painting":1,"gallery":2,"viewers":0,"queue":2,"delay_ms":0}
+{"type":"event","seq":17,"time_ms":0.472,"event":"view_begin","text":"Начало осмотра","visitor":1,"painting":1,"gallery":2,"viewers":1,"queue":2,"delay_ms":10}
+{"type":"event","seq":18,"time_ms":0.542,"event":"arrive","text":"Посетитель прибыл","visitor":6,"painting":0,"gallery":2,"viewers":0,"queue":2,"delay_ms":0}
+{"type":"event","seq":19,"time_ms":0.546,"event":"queue","text":"Посетитель ожидает разрешения вахтёра","visitor":6,"painting":0,"gallery":2,"viewers":0,"queue":3,"delay_ms":0}
+{"type":"event","seq":20,"time_ms":0.547,"event":"wait_entrance","text":"Галерея заполнена, ожидание у входа","visitor":6,"painting":0,"gallery":2,"viewers":0,"queue":3,"delay_ms":0}
+{"type":"event","seq":21,"time_ms":0.553,"event":"arrive","text":"Посетитель прибыл","visitor":5,"painting":0,"gallery":2,"viewers":0,"queue":3,"delay_ms":0}
+{"type":"event","seq":22,"time_ms":0.561,"event":"queue","text":"Посетитель ожидает разрешения вахтёра","visitor":5,"painting":0,"gallery":2,"viewers":0,"queue":4,"delay_ms":0}
+{"type":"event","seq":23,"time_ms":0.562,"event":"wait_entrance","text":"Галерея заполнена, ожидание у входа","visitor":5,"painting":0,"gallery":2,"viewers":0,"queue":4,"delay_ms":0}
+{"type":"event","seq":24,"time_ms":0.580,"event":"stop","text":"Получен сигнал: новые входы прекращены","visitor":0,"painting":0,"gallery":2,"viewers":0,"queue":4,"delay_ms":2}
+{"type":"event","seq":25,"time_ms":0.604,"event":"cancel","text":"Ожидание входа отменено","visitor":3,"painting":0,"gallery":2,"viewers":0,"queue":3,"delay_ms":0}
+{"type":"event","seq":26,"time_ms":0.617,"event":"cancel","text":"Ожидание входа отменено","visitor":4,"painting":0,"gallery":2,"viewers":0,"queue":2,"delay_ms":0}
+{"type":"event","seq":27,"time_ms":0.635,"event":"cancel","text":"Ожидание входа отменено","visitor":6,"painting":0,"gallery":2,"viewers":0,"queue":1,"delay_ms":0}
+{"type":"event","seq":28,"time_ms":0.641,"event":"cancel","text":"Ожидание входа отменено","visitor":5,"painting":0,"gallery":2,"viewers":0,"queue":0,"delay_ms":0}
+{"type":"event","seq":29,"time_ms":0.700,"event":"entrance_closed","text":"Источник прибытий закрыт, очередь обслуживается","visitor":0,"painting":0,"gallery":2,"viewers":0,"queue":0,"delay_ms":0}
+{"type":"event","seq":30,"time_ms":0.779,"event":"arrive","text":"Посетитель прибыл","visitor":7,"painting":0,"gallery":2,"viewers":0,"queue":0,"delay_ms":0}
+{"type":"event","seq":31,"time_ms":0.790,"event":"cancel","text":"Ожидание входа отменено","visitor":7,"painting":0,"gallery":2,"viewers":0,"queue":0,"delay_ms":0}
+{"type":"event","seq":32,"time_ms":10.542,"event":"view_end","text":"Окончание осмотра","visitor":1,"painting":1,"gallery":2,"viewers":0,"queue":0,"delay_ms":0}
+{"type":"event","seq":33,"time_ms":10.592,"event":"view_end","text":"Окончание осмотра","visitor":2,"painting":2,"gallery":2,"viewers":0,"queue":0,"delay_ms":0}
+{"type":"event","seq":34,"time_ms":10.690,"event":"choose","text":"Посетитель выбрал картину","visitor":1,"painting":3,"gallery":2,"viewers":0,"queue":0,"delay_ms":0}
+{"type":"event","seq":35,"time_ms":10.697,"event":"view_begin","text":"Начало осмотра","visitor":1,"painting":3,"gallery":2,"viewers":1,"queue":0,"delay_ms":10}
+{"type":"event","seq":36,"time_ms":10.762,"event":"choose","text":"Посетитель выбрал картину","visitor":2,"painting":1,"gallery":2,"viewers":0,"queue":0,"delay_ms":0}
+{"type":"event","seq":37,"time_ms":10.768,"event":"view_begin","text":"Начало осмотра","visitor":2,"painting":1,"gallery":2,"viewers":1,"queue":0,"delay_ms":10}
+{"type":"event","seq":38,"time_ms":20.724,"event":"view_end","text":"Окончание осмотра","visitor":1,"painting":3,"gallery":2,"viewers":0,"queue":0,"delay_ms":0}
+{"type":"event","seq":39,"time_ms":20.830,"event":"choose","text":"Посетитель выбрал картину","visitor":1,"painting":2,"gallery":2,"viewers":0,"queue":0,"delay_ms":0}
+{"type":"event","seq":40,"time_ms":20.846,"event":"view_begin","text":"Начало осмотра","visitor":1,"painting":2,"gallery":2,"viewers":1,"queue":0,"delay_ms":10}
+{"type":"event","seq":41,"time_ms":20.889,"event":"view_end","text":"Окончание осмотра","visitor":2,"painting":1,"gallery":2,"viewers":0,"queue":0,"delay_ms":0}
+{"type":"event","seq":42,"time_ms":20.971,"event":"choose","text":"Посетитель выбрал картину","visitor":2,"painting":3,"gallery":2,"viewers":0,"queue":0,"delay_ms":0}
+{"type":"event","seq":43,"time_ms":20.976,"event":"view_begin","text":"Начало осмотра","visitor":2,"painting":3,"gallery":2,"viewers":1,"queue":0,"delay_ms":10}
+{"type":"event","seq":44,"time_ms":32.377,"event":"view_end","text":"Окончание осмотра","visitor":1,"painting":2,"gallery":2,"viewers":0,"queue":0,"delay_ms":0}
+{"type":"event","seq":45,"time_ms":32.402,"event":"view_end","text":"Окончание осмотра","visitor":2,"painting":3,"gallery":2,"viewers":0,"queue":0,"delay_ms":0}
+{"type":"event","seq":46,"time_ms":32.471,"event":"exit","text":"Посетитель вышел из галереи","visitor":1,"painting":0,"gallery":1,"viewers":0,"queue":0,"delay_ms":0}
+{"type":"event","seq":47,"time_ms":32.493,"event":"exit","text":"Посетитель вышел из галереи","visitor":2,"painting":0,"gallery":0,"viewers":0,"queue":0,"delay_ms":0}
+{"type":"event","seq":48,"time_ms":32.507,"event":"warden_done","text":"Вахтёр завершил работу","visitor":0,"painting":0,"gallery":0,"viewers":0,"queue":0,"delay_ms":0}
+{"type":"painting_summary","painting":1,"maximum":1,"viewers":0}
+{"type":"painting_summary","painting":2,"maximum":1,"viewers":0}
+{"type":"painting_summary","painting":3,"maximum":1,"viewers":0}
+{"type":"summary","reason":"signal","signal":2,"requested":100,"created":7,"arrived":7,"admitted":2,"completed":2,"cancelled":5,"views":6,"maximum":2,"gallery":0,"queue":0,"time_ms":32.671}

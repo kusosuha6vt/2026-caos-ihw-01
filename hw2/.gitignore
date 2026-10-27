@@ -1,0 +1,11 @@
+/build*/
+/docs/generated/
+*.log
+__pycache__/
+.DS_Store
+
+# Keep development notes and assignment PDFs local.
+*.md
+!/README.md
+!/REPORT.md
+/docs/statements/

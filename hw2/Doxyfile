@@ -1,0 +1,26 @@
+PROJECT_NAME           = "Картинная галерея: многопоточная модель"
+PROJECT_BRIEF          = "Допуск в порядке очереди, ограничение числа зрителей и корректное завершение"
+OUTPUT_DIRECTORY       = docs/generated
+INPUT                  = README.md REPORT.md include src
+USE_MDFILE_AS_MAINPAGE  = README.md
+FILE_PATTERNS          = *.h *.c *.md
+RECURSIVE              = YES
+INPUT_ENCODING         = UTF-8
+OUTPUT_LANGUAGE        = Russian
+EXTRACT_ALL            = NO
+EXTRACT_STATIC         = YES
+JAVADOC_AUTOBRIEF      = YES
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+WARN_AS_ERROR          = YES
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+HAVE_DOT               = NO
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+QUIET                  = YES
+
+MACRO_EXPANSION        = YES
+EXPAND_ONLY_PREDEF      = YES
+PREDEFINED             = "GALLERY_PRINTF_FORMAT(format_index,arguments_index)="
