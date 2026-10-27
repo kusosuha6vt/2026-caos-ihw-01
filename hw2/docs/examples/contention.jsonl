@@ -1,0 +1,81 @@
+{"type": "config", "backend": "condition", "capacity": 3, "paintings": 1, "painting_capacity": 1, "visitors": 8, "arrival_min_ms": 0, "arrival_max_ms": 0, "view_min_ms": 5, "view_max_ms": 5, "display_delay_ms": 0, "strategy": "sequential", "seed": 42}
+{"type": "event", "seq": 1, "time_ms": 0.212, "event": "arrive", "text": "Посетитель прибыл", "visitor": 1, "painting": 0, "gallery": 0, "viewers": 0, "queue": 0, "delay_ms": 0}
+{"type": "event", "seq": 2, "time_ms": 0.261, "event": "queue", "text": "Посетитель ожидает разрешения вахтёра", "visitor": 1, "painting": 0, "gallery": 0, "viewers": 0, "queue": 1, "delay_ms": 0}
+{"type": "event", "seq": 3, "time_ms": 0.331, "event": "grant", "text": "Вахтёр разрешил вход", "visitor": 1, "painting": 0, "gallery": 1, "viewers": 0, "queue": 0, "delay_ms": 0}
+{"type": "event", "seq": 4, "time_ms": 0.394, "event": "enter", "text": "Посетитель вошёл в галерею", "visitor": 1, "painting": 0, "gallery": 1, "viewers": 0, "queue": 0, "delay_ms": 0}
+{"type": "event", "seq": 5, "time_ms": 0.439, "event": "choose", "text": "Посетитель выбрал картину", "visitor": 1, "painting": 1, "gallery": 1, "viewers": 0, "queue": 0, "delay_ms": 0}
+{"type": "event", "seq": 6, "time_ms": 0.486, "event": "view_begin", "text": "Начало осмотра", "visitor": 1, "painting": 1, "gallery": 1, "viewers": 1, "queue": 0, "delay_ms": 5}
+{"type": "event", "seq": 7, "time_ms": 0.611, "event": "arrive", "text": "Посетитель прибыл", "visitor": 2, "painting": 0, "gallery": 1, "viewers": 0, "queue": 0, "delay_ms": 0}
+{"type": "event", "seq": 8, "time_ms": 0.657, "event": "queue", "text": "Посетитель ожидает разрешения вахтёра", "visitor": 2, "painting": 0, "gallery": 1, "viewers": 0, "queue": 1, "delay_ms": 0}
+{"type": "event", "seq": 9, "time_ms": 0.715, "event": "grant", "text": "Вахтёр разрешил вход", "visitor": 2, "painting": 0, "gallery": 2, "viewers": 0, "queue": 0, "delay_ms": 0}
+{"type": "event", "seq": 10, "time_ms": 0.775, "event": "arrive", "text": "Посетитель прибыл", "visitor": 3, "painting": 0, "gallery": 2, "viewers": 0, "queue": 0, "delay_ms": 0}
+{"type": "event", "seq": 11, "time_ms": 0.821, "event": "queue", "text": "Посетитель ожидает разрешения вахтёра", "visitor": 3, "painting": 0, "gallery": 2, "viewers": 0, "queue": 1, "delay_ms": 0}
+{"type": "event", "seq": 12, "time_ms": 0.882, "event": "grant", "text": "Вахтёр разрешил вход", "visitor": 3, "painting": 0, "gallery": 3, "viewers": 0, "queue": 0, "delay_ms": 0}
+{"type": "event", "seq": 13, "time_ms": 0.945, "event": "enter", "text": "Посетитель вошёл в галерею", "visitor": 3, "painting": 0, "gallery": 3, "viewers": 0, "queue": 0, "delay_ms": 0}
+{"type": "event", "seq": 14, "time_ms": 1.002, "event": "choose", "text": "Посетитель выбрал картину", "visitor": 3, "painting": 1, "gallery": 3, "viewers": 1, "queue": 0, "delay_ms": 0}
+{"type": "event", "seq": 15, "time_ms": 1.033, "event": "wait_painting", "text": "Ожидание места возле картины", "visitor": 3, "painting": 1, "gallery": 3, "viewers": 1, "queue": 0, "delay_ms": 0}
+{"type": "event", "seq": 16, "time_ms": 1.106, "event": "enter", "text": "Посетитель вошёл в галерею", "visitor": 2, "painting": 0, "gallery": 3, "viewers": 0, "queue": 0, "delay_ms": 0}
+{"type": "event", "seq": 17, "time_ms": 1.156, "event": "choose", "text": "Посетитель выбрал картину", "visitor": 2, "painting": 1, "gallery": 3, "viewers": 1, "queue": 0, "delay_ms": 0}
+{"type": "event", "seq": 18, "time_ms": 1.195, "event": "wait_painting", "text": "Ожидание места возле картины", "visitor": 2, "painting": 1, "gallery": 3, "viewers": 1, "queue": 0, "delay_ms": 0}
+{"type": "event", "seq": 19, "time_ms": 1.322, "event": "arrive", "text": "Посетитель прибыл", "visitor": 4, "painting": 0, "gallery": 3, "viewers": 0, "queue": 0, "delay_ms": 0}
+{"type": "event", "seq": 20, "time_ms": 1.364, "event": "queue", "text": "Посетитель ожидает разрешения вахтёра", "visitor": 4, "painting": 0, "gallery": 3, "viewers": 0, "queue": 1, "delay_ms": 0}
+{"type": "event", "seq": 21, "time_ms": 1.401, "event": "wait_entrance", "text": "Галерея заполнена, ожидание у входа", "visitor": 4, "painting": 0, "gallery": 3, "viewers": 0, "queue": 1, "delay_ms": 0}
+{"type": "event", "seq": 22, "time_ms": 1.535, "event": "arrive", "text": "Посетитель прибыл", "visitor": 5, "painting": 0, "gallery": 3, "viewers": 0, "queue": 1, "delay_ms": 0}
+{"type": "event", "seq": 23, "time_ms": 1.593, "event": "queue", "text": "Посетитель ожидает разрешения вахтёра", "visitor": 5, "painting": 0, "gallery": 3, "viewers": 0, "queue": 2, "delay_ms": 0}
+{"type": "event", "seq": 24, "time_ms": 1.634, "event": "wait_entrance", "text": "Галерея заполнена, ожидание у входа", "visitor": 5, "painting": 0, "gallery": 3, "viewers": 0, "queue": 2, "delay_ms": 0}
+{"type": "event", "seq": 25, "time_ms": 1.735, "event": "arrive", "text": "Посетитель прибыл", "visitor": 6, "painting": 0, "gallery": 3, "viewers": 0, "queue": 2, "delay_ms": 0}
+{"type": "event", "seq": 26, "time_ms": 1.855, "event": "queue", "text": "Посетитель ожидает разрешения вахтёра", "visitor": 6, "painting": 0, "gallery": 3, "viewers": 0, "queue": 3, "delay_ms": 0}
+{"type": "event", "seq": 27, "time_ms": 1.898, "event": "wait_entrance", "text": "Галерея заполнена, ожидание у входа", "visitor": 6, "painting": 0, "gallery": 3, "viewers": 0, "queue": 3, "delay_ms": 0}
+{"type": "event", "seq": 28, "time_ms": 1.982, "event": "arrive", "text": "Посетитель прибыл", "visitor": 7, "painting": 0, "gallery": 3, "viewers": 0, "queue": 3, "delay_ms": 0}
+{"type": "event", "seq": 29, "time_ms": 2.09, "event": "queue", "text": "Посетитель ожидает разрешения вахтёра", "visitor": 7, "painting": 0, "gallery": 3, "viewers": 0, "queue": 4, "delay_ms": 0}
+{"type": "event", "seq": 30, "time_ms": 2.146, "event": "wait_entrance", "text": "Галерея заполнена, ожидание у входа", "visitor": 7, "painting": 0, "gallery": 3, "viewers": 0, "queue": 4, "delay_ms": 0}
+{"type": "event", "seq": 31, "time_ms": 2.229, "event": "entrance_closed", "text": "Источник прибытий закрыт, очередь обслуживается", "visitor": 0, "painting": 0, "gallery": 3, "viewers": 0, "queue": 4, "delay_ms": 0}
+{"type": "event", "seq": 32, "time_ms": 2.426, "event": "arrive", "text": "Посетитель прибыл", "visitor": 8, "painting": 0, "gallery": 3, "viewers": 0, "queue": 4, "delay_ms": 0}
+{"type": "event", "seq": 33, "time_ms": 2.474, "event": "queue", "text": "Посетитель ожидает разрешения вахтёра", "visitor": 8, "painting": 0, "gallery": 3, "viewers": 0, "queue": 5, "delay_ms": 0}
+{"type": "event", "seq": 34, "time_ms": 2.532, "event": "wait_entrance", "text": "Галерея заполнена, ожидание у входа", "visitor": 8, "painting": 0, "gallery": 3, "viewers": 0, "queue": 5, "delay_ms": 0}
+{"type": "event", "seq": 35, "time_ms": 6.137, "event": "view_end", "text": "Окончание осмотра", "visitor": 1, "painting": 1, "gallery": 3, "viewers": 0, "queue": 5, "delay_ms": 0}
+{"type": "event", "seq": 36, "time_ms": 6.21, "event": "view_begin", "text": "Начало осмотра", "visitor": 3, "painting": 1, "gallery": 3, "viewers": 1, "queue": 5, "delay_ms": 5}
+{"type": "event", "seq": 37, "time_ms": 6.252, "event": "exit", "text": "Посетитель вышел из галереи", "visitor": 1, "painting": 0, "gallery": 2, "viewers": 0, "queue": 5, "delay_ms": 0}
+{"type": "event", "seq": 38, "time_ms": 6.318, "event": "grant", "text": "Вахтёр разрешил вход", "visitor": 4, "painting": 0, "gallery": 3, "viewers": 0, "queue": 4, "delay_ms": 0}
+{"type": "event", "seq": 39, "time_ms": 6.373, "event": "enter", "text": "Посетитель вошёл в галерею", "visitor": 4, "painting": 0, "gallery": 3, "viewers": 0, "queue": 4, "delay_ms": 0}
+{"type": "event", "seq": 40, "time_ms": 6.406, "event": "choose", "text": "Посетитель выбрал картину", "visitor": 4, "painting": 1, "gallery": 3, "viewers": 1, "queue": 4, "delay_ms": 0}
+{"type": "event", "seq": 41, "time_ms": 6.435, "event": "wait_painting", "text": "Ожидание места возле картины", "visitor": 4, "painting": 1, "gallery": 3, "viewers": 1, "queue": 4, "delay_ms": 0}
+{"type": "event", "seq": 42, "time_ms": 11.435, "event": "view_end", "text": "Окончание осмотра", "visitor": 3, "painting": 1, "gallery": 3, "viewers": 0, "queue": 4, "delay_ms": 0}
+{"type": "event", "seq": 43, "time_ms": 11.572, "event": "view_begin", "text": "Начало осмотра", "visitor": 2, "painting": 1, "gallery": 3, "viewers": 1, "queue": 4, "delay_ms": 5}
+{"type": "event", "seq": 44, "time_ms": 11.637, "event": "exit", "text": "Посетитель вышел из галереи", "visitor": 3, "painting": 0, "gallery": 2, "viewers": 0, "queue": 4, "delay_ms": 0}
+{"type": "event", "seq": 45, "time_ms": 11.706, "event": "grant", "text": "Вахтёр разрешил вход", "visitor": 5, "painting": 0, "gallery": 3, "viewers": 0, "queue": 3, "delay_ms": 0}
+{"type": "event", "seq": 46, "time_ms": 11.793, "event": "enter", "text": "Посетитель вошёл в галерею", "visitor": 5, "painting": 0, "gallery": 3, "viewers": 0, "queue": 3, "delay_ms": 0}
+{"type": "event", "seq": 47, "time_ms": 11.846, "event": "choose", "text": "Посетитель выбрал картину", "visitor": 5, "painting": 1, "gallery": 3, "viewers": 1, "queue": 3, "delay_ms": 0}
+{"type": "event", "seq": 48, "time_ms": 11.887, "event": "wait_painting", "text": "Ожидание места возле картины", "visitor": 5, "painting": 1, "gallery": 3, "viewers": 1, "queue": 3, "delay_ms": 0}
+{"type": "event", "seq": 49, "time_ms": 17.733, "event": "view_end", "text": "Окончание осмотра", "visitor": 2, "painting": 1, "gallery": 3, "viewers": 0, "queue": 3, "delay_ms": 0}
+{"type": "event", "seq": 50, "time_ms": 17.81, "event": "view_begin", "text": "Начало осмотра", "visitor": 4, "painting": 1, "gallery": 3, "viewers": 1, "queue": 3, "delay_ms": 5}
+{"type": "event", "seq": 51, "time_ms": 17.872, "event": "exit", "text": "Посетитель вышел из галереи", "visitor": 2, "painting": 0, "gallery": 2, "viewers": 0, "queue": 3, "delay_ms": 0}
+{"type": "event", "seq": 52, "time_ms": 17.942, "event": "grant", "text": "Вахтёр разрешил вход", "visitor": 6, "painting": 0, "gallery": 3, "viewers": 0, "queue": 2, "delay_ms": 0}
+{"type": "event", "seq": 53, "time_ms": 18.012, "event": "enter", "text": "Посетитель вошёл в галерею", "visitor": 6, "painting": 0, "gallery": 3, "viewers": 0, "queue": 2, "delay_ms": 0}
+{"type": "event", "seq": 54, "time_ms": 18.055, "event": "choose", "text": "Посетитель выбрал картину", "visitor": 6, "painting": 1, "gallery": 3, "viewers": 1, "queue": 2, "delay_ms": 0}
+{"type": "event", "seq": 55, "time_ms": 18.088, "event": "wait_painting", "text": "Ожидание места возле картины", "visitor": 6, "painting": 1, "gallery": 3, "viewers": 1, "queue": 2, "delay_ms": 0}
+{"type": "event", "seq": 56, "time_ms": 23.757, "event": "view_end", "text": "Окончание осмотра", "visitor": 4, "painting": 1, "gallery": 3, "viewers": 0, "queue": 2, "delay_ms": 0}
+{"type": "event", "seq": 57, "time_ms": 23.829, "event": "view_begin", "text": "Начало осмотра", "visitor": 5, "painting": 1, "gallery": 3, "viewers": 1, "queue": 2, "delay_ms": 5}
+{"type": "event", "seq": 58, "time_ms": 23.893, "event": "exit", "text": "Посетитель вышел из галереи", "visitor": 4, "painting": 0, "gallery": 2, "viewers": 0, "queue": 2, "delay_ms": 0}
+{"type": "event", "seq": 59, "time_ms": 24.004, "event": "grant", "text": "Вахтёр разрешил вход", "visitor": 7, "painting": 0, "gallery": 3, "viewers": 0, "queue": 1, "delay_ms": 0}
+{"type": "event", "seq": 60, "time_ms": 24.08, "event": "enter", "text": "Посетитель вошёл в галерею", "visitor": 7, "painting": 0, "gallery": 3, "viewers": 0, "queue": 1, "delay_ms": 0}
+{"type": "event", "seq": 61, "time_ms": 24.129, "event": "choose", "text": "Посетитель выбрал картину", "visitor": 7, "painting": 1, "gallery": 3, "viewers": 1, "queue": 1, "delay_ms": 0}
+{"type": "event", "seq": 62, "time_ms": 24.163, "event": "wait_painting", "text": "Ожидание места возле картины", "visitor": 7, "painting": 1, "gallery": 3, "viewers": 1, "queue": 1, "delay_ms": 0}
+{"type": "event", "seq": 63, "time_ms": 28.986, "event": "view_end", "text": "Окончание осмотра", "visitor": 5, "painting": 1, "gallery": 3, "viewers": 0, "queue": 1, "delay_ms": 0}
+{"type": "event", "seq": 64, "time_ms": 29.066, "event": "view_begin", "text": "Начало осмотра", "visitor": 6, "painting": 1, "gallery": 3, "viewers": 1, "queue": 1, "delay_ms": 5}
+{"type": "event", "seq": 65, "time_ms": 29.141, "event": "exit", "text": "Посетитель вышел из галереи", "visitor": 5, "painting": 0, "gallery": 2, "viewers": 0, "queue": 1, "delay_ms": 0}
+{"type": "event", "seq": 66, "time_ms": 29.206, "event": "grant", "text": "Вахтёр разрешил вход", "visitor": 8, "painting": 0, "gallery": 3, "viewers": 0, "queue": 0, "delay_ms": 0}
+{"type": "event", "seq": 67, "time_ms": 29.279, "event": "enter", "text": "Посетитель вошёл в галерею", "visitor": 8, "painting": 0, "gallery": 3, "viewers": 0, "queue": 0, "delay_ms": 0}
+{"type": "event", "seq": 68, "time_ms": 29.324, "event": "choose", "text": "Посетитель выбрал картину", "visitor": 8, "painting": 1, "gallery": 3, "viewers": 1, "queue": 0, "delay_ms": 0}
+{"type": "event", "seq": 69, "time_ms": 29.361, "event": "wait_painting", "text": "Ожидание места возле картины", "visitor": 8, "painting": 1, "gallery": 3, "viewers": 1, "queue": 0, "delay_ms": 0}
+{"type": "event", "seq": 70, "time_ms": 34.838, "event": "view_end", "text": "Окончание осмотра", "visitor": 6, "painting": 1, "gallery": 3, "viewers": 0, "queue": 0, "delay_ms": 0}
+{"type": "event", "seq": 71, "time_ms": 34.919, "event": "view_begin", "text": "Начало осмотра", "visitor": 7, "painting": 1, "gallery": 3, "viewers": 1, "queue": 0, "delay_ms": 5}
+{"type": "event", "seq": 72, "time_ms": 34.979, "event": "exit", "text": "Посетитель вышел из галереи", "visitor": 6, "painting": 0, "gallery": 2, "viewers": 0, "queue": 0, "delay_ms": 0}
+{"type": "event", "seq": 73, "time_ms": 40.063, "event": "view_end", "text": "Окончание осмотра", "visitor": 7, "painting": 1, "gallery": 2, "viewers": 0, "queue": 0, "delay_ms": 0}
+{"type": "event", "seq": 74, "time_ms": 40.13, "event": "view_begin", "text": "Начало осмотра", "visitor": 8, "painting": 1, "gallery": 2, "viewers": 1, "queue": 0, "delay_ms": 5}
+{"type": "event", "seq": 75, "time_ms": 40.194, "event": "exit", "text": "Посетитель вышел из галереи", "visitor": 7, "painting": 0, "gallery": 1, "viewers": 0, "queue": 0, "delay_ms": 0}
+{"type": "event", "seq": 76, "time_ms": 46.386, "event": "view_end", "text": "Окончание осмотра", "visitor": 8, "painting": 1, "gallery": 1, "viewers": 0, "queue": 0, "delay_ms": 0}
+{"type": "event", "seq": 77, "time_ms": 46.509, "event": "exit", "text": "Посетитель вышел из галереи", "visitor": 8, "painting": 0, "gallery": 0, "viewers": 0, "queue": 0, "delay_ms": 0}
+{"type": "event", "seq": 78, "time_ms": 46.581, "event": "warden_done", "text": "Вахтёр завершил работу", "visitor": 0, "painting": 0, "gallery": 0, "viewers": 0, "queue": 0, "delay_ms": 0}
+{"type": "painting_summary", "painting": 1, "maximum": 1, "viewers": 0}
+{"type": "summary", "reason": "completed", "signal": 0, "requested": 8, "created": 8, "arrived": 8, "admitted": 8, "completed": 8, "cancelled": 0, "views": 8, "maximum": 3, "gallery": 0, "queue": 0, "time_ms": 46.764}

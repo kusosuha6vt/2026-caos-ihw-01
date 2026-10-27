@@ -1,0 +1,4 @@
+@INCLUDE = Doxyfile
+PROJECT_NAME = "Картинная галерея: версия с условными переменными"
+OUTPUT_DIRECTORY = docs/generated/condition
+PREDEFINED += GALLERY_COND=1
